@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      PETSLAND | Veterinaria en Bogotá: alimentos, servicios y accesorios para
+      mascotas
+    </title>
+    <meta
+      name="description"
+      content="PETSLAND es una veterinaria en Bogotá. Consulta precios de servicios, alimentos para perros y gatos, accesorios y habla con el asistente virtual o por WhatsApp."
+    />
+    <meta name="theme-color" content="#1B5E20" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- HEADER -->
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="PETSLAND, ir al inicio">
+          <video
+            class="brand-logo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+          >
+            <source
+              src="https://videotourl.com/videos/1790281864009-19416ce6-12de-4b8e-9f9b-3872ed444907.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <span class="brand-name">PETSLAND</span>
+        </a>
+
+        <nav id="menu" class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#bienestar">Bienestar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+          </ul>
+          <a class="nav-ig" href="https://www.instagram.com/petsland_26/" target="_blank" rel="noopener" aria-label="Instagram de PETSLAND, @petsland_26"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>@petsland_26</span></a>
+          <a class="btn btn-primary btn-sm" href="#contacto">Agenda tu cita</a>
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              <span class="hero-name">PETSLAND</span>
+              <span class="hero-tag">El cuidado que tu mascota merece.</span>
+            </h1>
+            <p class="hero-sub">Salud, amor y bienestar animal.</p>
+            <p class="hero-place">
+              Veterinaria en Bogotá · Calle 73 B #113 A-52
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#contacto">¡Agenda tu cita!</a>
+              <a class="btn btn-outline" href="catalogo.html">Ver catálogo</a>
+              <a
+                class="btn btn-ghost"
+                href="https://wa.me/573203193564"
+                target="_blank"
+                rel="noopener"
+                >Hablar por WhatsApp</a
+              >
+            </div>
+            <p class="hero-link">
+              <a href="#servicios">Conoce nuestros servicios</a>
+            </p>
+          </div>
+          <div class="hero-media">
+            <div class="carousel" id="hero-carousel" role="region" aria-roledescription="carrusel" aria-label="Fotografías de PETSLAND">
+              <div class="carousel-track">
+              <figure class="slide is-active" aria-roledescription="diapositiva" aria-label="Foto 1 de 3">
+                <img src="https://www.image2url.com/r2/default/images/1792590717124-11435fdb-ad5c-442c-b988-8aa4d24ccbb6.png" alt="Fotografía de PETSLAND, imagen 1 de 3" decoding="async" fetchpriority="high" />
+              </figure>
+              <figure class="slide" aria-roledescription="diapositiva" aria-label="Foto 2 de 3">
+                <img src="https://www.image2url.com/r2/default/images/1792590783618-b4cdf29c-8b8f-403a-9943-ff6a23d36fbd.png" alt="Fotografía de PETSLAND, imagen 2 de 3" decoding="async" loading="lazy" />
+              </figure>
+              <figure class="slide" aria-roledescription="diapositiva" aria-label="Foto 3 de 3">
+                <img src="https://www.image2url.com/r2/default/images/1792590821600-356eebfb-bf62-41f3-abb3-65e023caa959.png" alt="Fotografía de PETSLAND, imagen 3 de 3" decoding="async" loading="lazy" />
+              </figure>
+              </div>
+              <button class="car-btn car-prev" type="button" aria-label="Foto anterior"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+              <button class="car-btn car-next" type="button" aria-label="Foto siguiente"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+              <div class="car-bar">
+                <div class="car-dots"></div>
+                <button class="car-pause" type="button" aria-pressed="false" aria-label="Pausar el cambio automático de fotos">
+                  <svg class="ico ico-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" fill="currentColor" stroke="none"/><rect x="14" y="5" width="4" height="14" fill="currentColor" stroke="none"/></svg>
+                  <svg class="ico ico-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="7,5 19,12 7,19" fill="currentColor" stroke="none"/></svg>
+                </button>
+              </div>
+            </div>
+            <video class="logo-video hero-badge" autoplay muted loop playsinline preload="metadata" aria-label="Logo animado de PETSLAND">
+              <source src="https://videotourl.com/videos/1790281864009-19416ce6-12de-4b8e-9f9b-3872ed444907.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section class="section" id="nosotros" aria-labelledby="nosotros-title">
+        <div class="container split">
+          <div>
+            <h2 id="nosotros-title">Nosotros</h2>
+            <p class="lead">
+              Una veterinaria donde el cuidado de las mascotas se acompaña con
+              cercanía, confianza y comunicación clara.
+            </p>
+            <p>
+              PETSLAND está en Bogotá y reúne atención veterinaria,
+              alimentación, higiene y productos para mascotas. Nos importa que
+              cada familia entienda lo que pasa con su mascota y se sienta
+              acompañada en cada paso.
+            </p>
+            <ul class="value-list">
+              <li>Trato humano y cercano</li>
+              <li>Comunicación clara</li>
+              <li>Amor por los animales</li>
+            </ul>
+          </div>
+          <div class="media-center">
+            <video
+              class="logo-video logo-small"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Logo animado de PETSLAND"
+            >
+              <source
+                src="https://videotourl.com/videos/1790281956381-514370b5-0a5f-4730-86e3-2315bec2ab1f.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANDREA -->
+      <section
+        class="section section-cream"
+        id="andrea"
+        aria-labelledby="andrea-title"
+      >
+        <div class="container split split-reverse">
+          <figure class="photo-frame">
+            <img
+              src="https://www.image2url.com/r2/default/images/1790255802508-83bdcfab-d564-43ff-9bc3-ee802d12a8d2.png"
+              alt="Andrea Vargas, propietaria de PETSLAND"
+            />
+          </figure>
+          <div>
+            <h2 id="andrea-title">Andrea Vargas</h2>
+            <p class="lead">La propietaria de PETSLAND.</p>
+            <p>
+              Andrea acompaña el cuidado de las mascotas con cercanía, trato
+              personal y amor por los animales. Esa forma de atender es la que
+              quiere que se sienta en PETSLAND.
+            </p>
+            <div class="btn-row">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/573203193564?text=Hola%20PETSLAND%2C%20quiero%20comunicarme%20con%20Andrea."
+                target="_blank"
+                rel="noopener"
+                >Escribir por WhatsApp</a
+              >
+              <a
+                class="btn btn-outline"
+                href="mailto:Andrea.mendoza8412@gmail.com"
+                >Enviar correo</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section class="section" id="servicios" aria-labelledby="servicios-title">
+        <div class="container">
+          <div class="section-head with-media">
+            <div>
+              <h2 id="servicios-title">Servicios y precios</h2>
+              <p class="lead">
+                Consulta lo que ofrece PETSLAND y cuánto cuesta cada servicio.
+              </p>
+              <p class="small-note">
+                Para solicitar un servicio, escríbenos por WhatsApp. Tu cita no
+                queda confirmada hasta que PETSLAND te responda.
+              </p>
+            </div>
+            <video
+              class="logo-video logo-small"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Logo animado de PETSLAND"
+            >
+              <source
+                src="https://videotourl.com/videos/1790282028203-12a02983-132e-42cb-bb40-9fe291b21e43.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div
+            class="tabs"
+            id="service-tabs"
+            role="tablist"
+            aria-label="Tipos de servicio"
+          ></div>
+          <div
+            class="service-grid"
+            id="service-grid"
+            role="tabpanel"
+            aria-live="polite"
+          ></div>
+
+          <!-- Atención veterinaria -->
+          <div class="feature" id="atencion">
+            <div class="feature-copy">
+              <h3>Atención veterinaria</h3>
+              <p>
+                Consulta general, controles, orientación y prevención. Mira un
+                momento real de atención en PETSLAND.
+              </p>
+              <a class="btn btn-primary" href="#contacto">Agenda tu cita</a>
+            </div>
+            <div class="video-frame">
+              <video
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Video real de un procedimiento veterinario en PETSLAND"
+              >
+                <source
+                  src="https://videotourl.com/videos/1788369453425-d1dd012d-8ec4-4b00-8f1a-74138939a4aa.mp4"
+                  type="video/mp4"
+                />
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </div>
+
+          <!-- Higiene -->
+          <div class="feature feature-reverse" id="higiene">
+            <div class="feature-copy">
+              <h3>Higiene, baño y peluquería</h3>
+              <p>
+                Baño, corte de uñas, cepillado, peluquería y estética canina,
+                hechos con paciencia y cuidado.
+              </p>
+              <a
+                class="btn btn-outline"
+                href="#servicios"
+                data-service-tab="higiene"
+                >Ver precios de higiene</a
+              >
+            </div>
+            <div class="video-frame">
+              <video
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Video real de Andrea en un servicio de higiene"
+              >
+                <source
+                  src="https://videotourl.com/videos/1788373333325-728f9c12-9662-48a7-b920-8601baa0acb7.mp4"
+                  type="video/mp4"
+                />
+                Tu navegador no puede reproducir este video.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BIENESTAR / MISIÓN / VISIÓN -->
+      <section
+        class="section section-cream"
+        id="bienestar"
+        aria-labelledby="bien-title"
+      >
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2 id="bien-title">Bienestar animal</h2>
+              <p class="lead">
+                Cuidar a una mascota es una responsabilidad que se comparte.
+              </p>
+              <p>
+                En PETSLAND creemos que el bienestar se construye con cuidado
+                diario, prevención y acompañamiento, y con información que
+                cualquier dueño pueda entender.
+              </p>
+              <ul class="pillars">
+                <li>Cuidado</li>
+                <li>Responsabilidad</li>
+                <li>Acompañamiento</li>
+                <li>Prevención</li>
+                <li>Bienestar</li>
+              </ul>
+            </div>
+            <figure class="photo-frame">
+              <img
+                src="https://www.image2url.com/r2/default/images/1790256540391-02989cb9-7e3b-46d0-8ac7-29cf9019fb82.png"
+                alt="Fotografía de PETSLAND"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="mv-grid">
+            <article class="mv-card" id="mision">
+              <h3>Misión</h3>
+              <p>
+                Ser la veterinaria de confianza y cercanía para los dueños de
+                perros en Bogotá, brindando atención médica, alimentación,
+                higiene y apoyo al bienestar animal con un trato claro,
+                comprensible y humano. PETSLAND busca que cada dueño se sienta
+                acompañado en el cuidado de su mascota, con servicios accesibles
+                y comunicación honesta.
+              </p>
+            </article>
+            <article class="mv-card" id="vision">
+              <h3>Visión</h3>
+              <p>
+                En los próximos años, PETSLAND aspira a consolidarse como la
+                veterinaria de referencia en su zona de Bogotá: reconocida por
+                su cercanía, comunicación clara y atención integral a mascotas.
+                Se propone construir una presencia digital activa y una
+                comunidad fiel de dueños de perros.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- MANIFIESTO -->
+      <section class="manifesto" id="manifiesto" aria-labelledby="manif-title">
+        <div class="container">
+          <h2 id="manif-title">El cuidado que tu mascota merece.</h2>
+          <ul class="manifesto-words">
+            <li>Amor</li>
+            <li>Responsabilidad</li>
+            <li>Confianza</li>
+            <li>Cercanía</li>
+            <li>Bienestar</li>
+            <li>Comunicación humana</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="section" id="contacto" aria-labelledby="contacto-title">
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <h2 id="contacto-title">Contacto</h2>
+            <p class="lead">
+              Escríbenos para pedir una cita, confirmar un producto o resolver
+              una duda.
+            </p>
+
+            <video
+              class="logo-video logo-small contact-logo"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Logo animado de PETSLAND"
+            >
+              <source
+                src="https://videotourl.com/videos/1790282061521-907794cf-1cd1-4066-8cc5-9ae3d8a4b4c6.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <address>
+              <p class="contact-name"><strong>PETSLAND</strong></p>
+              <ul class="contact-cards">
+              <li><a class="c-card c-wa" href="https://wa.me/573203193564" target="_blank" rel="noopener"><span class="c-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></span><span class="c-text"><strong>WhatsApp</strong><span>320 3193564</span></span></a></li>
+              <li><a class="c-card " href="tel:+573203193564"><span class="c-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span class="c-text"><strong>Teléfono</strong><span>320 3193564</span></span></a></li>
+              <li><a class="c-card " href="mailto:Andrea.mendoza8412@gmail.com"><span class="c-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><span class="c-text"><strong>Correo electrónico</strong><span>Andrea.mendoza8412@gmail.com</span></span></a></li>
+              <li><a class="c-card " href="https://www.google.com/maps/search/?api=1&query=Calle+73+B+%23113+A-52%2C+Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener"><span class="c-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="c-text"><strong>Ubicación en el mapa</strong><span>Calle 73 B #113 A-52, Bogotá, Colombia.</span></span></a></li>
+              <li><a class="c-card " href="https://www.instagram.com/petsland_26/" target="_blank" rel="noopener"><span class="c-icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span><span class="c-text"><strong>Instagram</strong><span>@petsland_26</span></span></a></li>
+              </ul>
+            </address>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            novalidate
+            aria-labelledby="form-title"
+          >
+            <h3 id="form-title">Agenda tu cita o haz una consulta</h3>
+            <p class="small-note">Los campos marcados con asterisco (*) son obligatorios.</p>
+            <p class="small-note">
+              Al enviar, se abrirá WhatsApp con tu mensaje listo. La solicitud
+              queda pendiente hasta que PETSLAND te responda.
+            </p>
+
+            <div class="form-field">
+              <label for="c-nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+              <input
+                id="c-nombre"
+                name="nombre"
+                type="text"
+                autocomplete="name"
+                required
+              />
+              <span class="err" id="err-nombre" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="c-tel">Teléfono <span class="req" aria-hidden="true">*</span></label>
+              <input
+                id="c-tel"
+                name="telefono"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                required
+              />
+              <span class="err" id="err-tel" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="c-mascota">Nombre de tu mascota <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-mascota" name="mascota" type="text" required />
+              <span class="err" id="err-mascota" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="c-especie">Especie <span class="req" aria-hidden="true">*</span></label>
+              <select id="c-especie" name="especie" required>
+                <option value="">Selecciona</option>
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Conejo</option>
+                <option>Otra</option>
+              </select>
+              <span class="err" id="err-especie" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="c-motivo">Motivo de contacto <span class="req" aria-hidden="true">*</span></label>
+              <select id="c-motivo" name="motivo" required>
+                <option value="">Selecciona</option>
+                <option>Consulta veterinaria</option>
+                <option>Baño o peluquería</option>
+                <option>Alimentos</option>
+                <option>Accesorios</option>
+                <option>Información sobre un servicio</option>
+                <option>Otro</option>
+              </select>
+              <span class="err" id="err-motivo" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="c-mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+              <textarea
+                id="c-mensaje"
+                name="mensaje"
+                rows="4"
+                required
+              ></textarea>
+              <span class="err" id="err-mensaje" role="alert"></span>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Enviar por WhatsApp
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="f-brand">
+          <p class="footer-brand">PETSLAND</p>
+          <p>El cuidado que tu mascota merece.</p>
+          <p>Salud, amor y bienestar animal.</p>
+        </div>
+        <nav aria-labelledby="f-nav">
+          <h2 class="f-title" id="f-nav">Navegación</h2>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#bienestar">Bienestar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="f-title">Contacto</h2>
+          <address>
+            <p>Calle 73 B #113 A-52, Bogotá, Colombia.</p>
+            <p>Teléfono: <a href="tel:+573203193564">320 3193564</a></p>
+            <p><a href="mailto:Andrea.mendoza8412@gmail.com">Andrea.mendoza8412@gmail.com</a></p>
+          </address>
+        </div>
+        <div>
+          <h2 class="f-title">Redes sociales</h2>
+          <ul class="f-social">
+            <li><a href="https://www.instagram.com/petsland_26/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>Instagram · @petsland_26</span></a></li>
+            <li><a href="https://wa.me/573203193564" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span>WhatsApp · 320 3193564</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © <span id="year">2026</span> PETSLAND. Bogotá, Colombia.
+      </p>
+    </footer>
+
+    <!-- CHATBOT -->
+    <button
+      type="button"
+      class="chat-fab"
+      id="chat-fab"
+      aria-label="Abrir el asistente de PETSLAND"
+      aria-expanded="false"
+      aria-controls="chat-window"
+    >
+      <span aria-hidden="true">🐾</span>
+    </button>
+
+    <section
+      class="chat-window"
+      id="chat-window"
+      role="dialog"
+      aria-label="Asistente PETSLAND"
+      hidden
+    >
+      <header class="chat-head">
+        <div>
+          <p class="chat-title">Asistente PETSLAND</p>
+          <p class="chat-subtitle">Precios, productos, servicios y contacto</p>
+        </div>
+        <button
+          type="button"
+          class="chat-close"
+          id="chat-close"
+          aria-label="Cerrar el asistente"
+        >
+          ×
+        </button>
+      </header>
+      <div class="chat-log" id="chat-log" aria-live="polite"></div>
+      <div
+        class="chat-quick"
+        id="chat-quick"
+        aria-label="Accesos rápidos"
+      ></div>
+      <form class="chat-form" id="chat-form" autocomplete="off">
+        <label class="sr-only" for="chat-input">Escribe tu pregunta</label>
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Escribe tu pregunta…"
+          maxlength="300"
+        />
+        <button type="submit" class="chat-send" aria-label="Enviar mensaje">
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

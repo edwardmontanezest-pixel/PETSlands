@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Catálogo PETSLAND | Alimentos y accesorios para perros y gatos
+    </title>
+    <meta
+      name="description"
+      content="Catálogo de PETSLAND: alimentos y accesorios para perros y gatos con el precio a la vista. Busca por marca, especie o categoría."
+    />
+    <meta name="theme-color" content="#1B5E20" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="catalogo.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#resultados">Saltar al catálogo</a>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="PETSLAND, volver al inicio"
+        >
+          <video
+            class="brand-logo"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-hidden="true"
+          >
+            <source
+              src="https://videotourl.com/videos/1790281864009-19416ce6-12de-4b8e-9f9b-3872ed444907.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <span class="brand-name">PETSLAND</span>
+        </a>
+
+        <nav id="menu" class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#bienestar">Bienestar</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+          </ul>
+          <a
+            class="nav-ig"
+            href="https://www.instagram.com/petsland_26/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram de PETSLAND, @petsland_26"
+            ><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M17.5 6.5h.01" /></svg
+            ><span>@petsland_26</span></a
+          >
+          <a
+            class="btn btn-primary btn-sm"
+            id="header-wa"
+            href="https://wa.me/573203193564"
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- TÍTULO Y CATEGORÍAS -->
+      <section class="cat-hero" aria-labelledby="cat-title">
+        <div class="container">
+          <nav class="crumbs" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Catálogo</span>
+          </nav>
+          <h1 id="cat-title">Catálogo PETSLAND</h1>
+          <p class="lead">
+            Alimentos y accesorios para perros y gatos, con el precio a la
+            vista.
+          </p>
+          <p class="small-note">
+            Para confirmar la disponibilidad actual de un producto, escribe a
+            PETSLAND por WhatsApp.
+          </p>
+
+          <div
+            class="group-tabs"
+            id="group-tabs"
+            role="group"
+            aria-label="Categorías del catálogo"
+          >
+            <button
+              type="button"
+              class="group-tab is-on"
+              data-group="todos"
+              aria-pressed="true"
+            >
+              <span aria-hidden="true">🐾</span> Todo el catálogo
+              <small id="n-todos"></small>
+            </button>
+            <button
+              type="button"
+              class="group-tab"
+              data-group="comida"
+              aria-pressed="false"
+            >
+              <span aria-hidden="true">🍖</span> Comida para mascotas
+              <small id="n-comida"></small>
+            </button>
+            <button
+              type="button"
+              class="group-tab"
+              data-group="accesorios"
+              aria-pressed="false"
+            >
+              <span aria-hidden="true">🛍️</span> Accesorios
+              <small id="n-accesorios"></small>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUSCADOR Y FILTROS -->
+      <section
+        class="toolbar"
+        id="buscar"
+        aria-label="Buscar y filtrar productos"
+      >
+        <div class="container">
+          <form class="search-row" id="search-form" role="search">
+            <label class="sr-only" for="f-search">Buscar productos</label>
+            <input
+              id="f-search"
+              type="search"
+              placeholder="Busca: Cat Chow, collar, comida, gato, perro…"
+              autocomplete="off"
+            />
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+
+          <div class="filters">
+            <div class="field">
+              <span class="field-label" id="lbl-especie">Especie</span>
+              <div
+                class="chips"
+                id="f-species"
+                role="group"
+                aria-labelledby="lbl-especie"
+              >
+                <button
+                  type="button"
+                  class="chip is-on"
+                  data-value="todos"
+                  aria-pressed="true"
+                >
+                  Todos
+                </button>
+                <button
+                  type="button"
+                  class="chip"
+                  data-value="perro"
+                  aria-pressed="false"
+                >
+                  🐶 Perros
+                </button>
+                <button
+                  type="button"
+                  class="chip"
+                  data-value="gato"
+                  aria-pressed="false"
+                >
+                  🐱 Gatos
+                </button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-sub">Tipo</label>
+              <select id="f-sub"></select>
+            </div>
+
+            <div class="field" id="field-brand">
+              <label for="f-brand">Marca</label>
+              <select id="f-brand"></select>
+            </div>
+
+            <div class="field" id="field-stage">
+              <label for="f-stage">Etapa</label>
+              <select id="f-stage"></select>
+            </div>
+
+            <div class="field">
+              <label for="f-price">Rango de precio</label>
+              <select id="f-price"></select>
+            </div>
+
+            <div class="field">
+              <label for="f-sort">Ordenar por</label>
+              <select id="f-sort">
+                <option value="default">Destacados</option>
+                <option value="price-asc">Precio: menor a mayor</option>
+                <option value="price-desc">Precio: mayor a menor</option>
+                <option value="name-asc">Nombre A-Z</option>
+                <option value="name-desc">Nombre Z-A</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-ghost btn-sm" id="f-reset">
+              Limpiar filtros
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTADOS -->
+      <section class="results" aria-label="Productos del catálogo">
+        <div class="container">
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+          <div id="resultados" tabindex="-1"></div>
+          <noscript
+            ><p>
+              Activa JavaScript para ver los productos del catálogo, o
+              escríbenos por WhatsApp.
+            </p></noscript
+          >
+          <div class="empty" id="empty" hidden>
+            <p>No encontramos productos con esos filtros.</p>
+            <button
+              type="button"
+              class="btn btn-outline btn-sm"
+              id="empty-reset"
+            >
+              Ver todo el catálogo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="f-brand">
+          <p class="footer-brand">PETSLAND</p>
+          <p>El cuidado que tu mascota merece.</p>
+          <p>Salud, amor y bienestar animal.</p>
+        </div>
+        <nav aria-labelledby="f-nav">
+          <h2 class="f-title" id="f-nav">Navegación</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#bienestar">Bienestar</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="f-title">Contacto</h2>
+          <address>
+            <p>Calle 73 B #113 A-52, Bogotá, Colombia.</p>
+            <p>Teléfono: <a href="tel:+573203193564">320 3193564</a></p>
+            <p>
+              <a href="mailto:Andrea.mendoza8412@gmail.com"
+                >Andrea.mendoza8412@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <div>
+          <h2 class="f-title">Redes sociales</h2>
+          <ul class="f-social">
+            <li>
+              <a
+                href="https://www.instagram.com/petsland_26/"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" /></svg
+                ><span>Instagram · @petsland_26</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/573203193564"
+                target="_blank"
+                rel="noopener"
+                ><svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.4 8.4 0 1 1 21 11.5z"
+                  /></svg
+                ><span>WhatsApp · 320 3193564</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © <span id="year">2026</span> PETSLAND. Bogotá, Colombia.
+      </p>
+    </footer>
+
+    <!-- CHATBOT -->
+    <button
+      type="button"
+      class="chat-fab"
+      id="chat-fab"
+      aria-label="Abrir el asistente de PETSLAND"
+      aria-expanded="false"
+      aria-controls="chat-window"
+    >
+      <span aria-hidden="true">🐾</span>
+    </button>
+
+    <section
+      class="chat-window"
+      id="chat-window"
+      role="dialog"
+      aria-label="Asistente PETSLAND"
+      hidden
+    >
+      <header class="chat-head">
+        <div>
+          <p class="chat-title">Asistente PETSLAND</p>
+          <p class="chat-subtitle">Precios, productos, servicios y contacto</p>
+        </div>
+        <button
+          type="button"
+          class="chat-close"
+          id="chat-close"
+          aria-label="Cerrar el asistente"
+        >
+          ×
+        </button>
+      </header>
+      <div class="chat-log" id="chat-log" aria-live="polite"></div>
+      <div
+        class="chat-quick"
+        id="chat-quick"
+        aria-label="Accesos rápidos"
+      ></div>
+      <form class="chat-form" id="chat-form" autocomplete="off">
+        <label class="sr-only" for="chat-input">Escribe tu pregunta</label>
+        <input
+          id="chat-input"
+          type="text"
+          placeholder="Escribe tu pregunta…"
+          maxlength="300"
+        />
+        <button type="submit" class="chat-send" aria-label="Enviar mensaje">
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <!-- DETALLE DE PRODUCTO -->
+    <dialog class="modal" id="product-dialog" aria-labelledby="pd-title">
+      <div class="modal-body">
+        <div class="pd-media" id="pd-media"></div>
+        <p class="pd-brand" id="pd-brand"></p>
+        <h2 id="pd-title"></h2>
+        <p class="pd-price" id="pd-price"></p>
+        <dl class="pd-meta" id="pd-meta"></dl>
+        <p id="pd-desc"></p>
+        <p class="small-note">
+          Para confirmar disponibilidad actual, escribe a PETSLAND.
+        </p>
+        <div class="btn-row">
+          <a
+            class="btn btn-primary"
+            id="pd-wa"
+            href="https://wa.me/573203193564"
+            target="_blank"
+            rel="noopener"
+            >Consultar por WhatsApp</a
+          >
+          <button type="button" class="btn btn-outline" id="pd-close">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="catalogo.js"></script>
+  </body>
+</html>
